@@ -54,4 +54,4 @@ sudo ./enable_static_nat.sh 2
 ```
 
 ### Will reassign static NAT, if it detects WAN subnet changes, upon next execution
-if WAN was 192.168.1.0/24, and changes to 172.16.16/0/24, because wifi was connect to different AP, this script will drop or re-create the WAN IP addresses to fit new subnet.  This script was built to be run by crontab, to execute every 5min, to check for WAN subnet changes.
+if WAN was 192.168.1.0/24, and changes to 172.16.16/0/24, because wifi was connect to different AP, this script will drop or re-create the WAN IP addresses to fit new subnet.  This script was built to be run by crontab, to execute every 5min or so, to check for WAN subnet changes.
